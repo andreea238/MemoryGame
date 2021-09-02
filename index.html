@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Test Your Memory</title>
+</head>
+<body>
+    
+   
+
+    <div class="menu">
+        <div class="popup" id="popup-1">
+            <div class="overlay"></div>
+            <div class="content">
+              <div class="close-btn" onclick="showPopup()">×</div>
+              <h2>Memory Game</h2>
+              <p>Start the game by flipping a card. Then try to find another card that has the same image as the first. 
+                  If you can't find a pair, the flipped cards will be flipped back with the face down. 
+                  Try to remember these images as it becomes easier to find pairs the longer you play.</p>
+            </div>
+          </div>
+    
+          <button onclick="showPopup()">Instructions</button>
+
+        <button id="resetBtn" onclick="resetGame()" >Reset Game</button>
+
+        <audio id="audio">
+            <source src="dance.mp3" type="audio/mpeg">
+        </audio>
+
+        <button id="musicBtn" onclick="playMusic()">Play/Pause Music</button>
+
+
+    </div>
+
+
+   <section class="memory-game">
+       <div class="card" data-name="sam">
+           <img class="front-face" src="sam.png"/>
+           <img class="back-face" src="leo.png"/>
+       </div>
+   
+   
+        <div class="card" data-name="dog">
+            <img class="front-face" src="dog.png"/>
+            <img class="back-face" src="leo.png"/>
+        </div>
+
+
+        <div class="card" data-name="cat">
+            <img class="front-face" src="cat.png"/>
+            <img class="back-face" src="leo.png"/>
+        </div>
+
+        <div class="card" data-name="women">
+            <img class="front-face" src="women.png"/>
+            <img class="back-face" src="leo.png"/>
+        </div>
+
+
+        <div class="card" data-name="baby">
+            <img class="front-face" src="baby.png"/>
+            <img class="back-face" src="leo.png"/>
+        </div>
+    
+    
+         <div class="card" data-name="jackie">
+             <img class="front-face" src="jackie.png"/>
+             <img class="back-face" src="leo.png"/>
+         </div>
+ 
+ 
+         <div class="card" data-name="drake">
+             <img class="front-face" src="drake.png"/>
+             <img class="back-face" src="leo.png"/>
+         </div>
+ 
+         <div class="card" data-name="uncle">
+             <img class="front-face" src="uncle.png"/>
+             <img class="back-face" src="leo.png"/>
+         </div>
+
+         <div class="card" data-name="dog">
+            <img class="front-face" src="dog.png"/>
+            <img class="back-face" src="leo.png"/>
+        </div>
+    
+    
+         <div class="card" data-name="women">
+             <img class="front-face" src="women.png"/>
+             <img class="back-face" src="leo.png"/>
+         </div>
+ 
+ 
+         <div class="card" data-name="sam">
+             <img class="front-face" src="sam.png"/>
+             <img class="back-face" src="leo.png"/>
+         </div>
+ 
+         <div class="card" data-name="cat">
+             <img class="front-face" src="cat.png"/>
+             <img class="back-face" src="leo.png"/>
+         </div>
+
+         <div class="card" data-name="drake">
+            <img class="front-face" src="drake.png"/>
+            <img class="back-face" src="leo.png"/>
+        </div>
+    
+    
+         <div class="card" data-name="uncle">
+             <img class="front-face" src="uncle.png"/>
+             <img class="back-face" src="leo.png"/>
+         </div>
+ 
+ 
+         <div class="card"  data-name="baby">
+             <img class="front-face" src="baby.png"/>
+             <img class="back-face" src="leo.png"/>
+         </div>
+ 
+         <div class="card" data-name="jackie">
+             <img class="front-face" src="jackie.png"/>
+             <img class="back-face" src="leo.png"/>
+         </div>
+    </section>
+
+
+   <script src="script.js"></script> 
+</body>
+
+</html>
